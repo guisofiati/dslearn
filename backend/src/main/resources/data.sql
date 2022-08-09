@@ -28,3 +28,18 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_Id, prer
 
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2023-05-05T13:00:00Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2023-05-05T13:00:00Z', null, true, false);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 01 do Capitulo 1', 1, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (1, 'Material de apoio: link', 'https://bit.ly/3zPJ8mK');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 02 do Capitulo 1', 2, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (2, 'Material de apoio: link', 'https://bit.ly/3zPJ8mK');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 03 do Capitulo 1', 3, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (3, 'Material de apoio: link', 'https://bit.ly/3zPJ8mK');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Tarefa do capitulo 1', 4, 1);
+INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, due_Date) VALUES (4, 'Fazer os exercicios e entregar', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2023-05-25T13:00:00Z');
+
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
