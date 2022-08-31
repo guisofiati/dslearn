@@ -38,3 +38,5 @@ build/
 
 mvnw
 mvnw.cmd
+
+application.properties
